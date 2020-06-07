@@ -50,6 +50,6 @@ yq <- as.yearqtr(as.yearmon(trend$Date, "%m/%d/%Y") + 1/12)
 trend$Season <- factor(format(yq, "%q"), levels = 1:4, 
                        labels = c("winter", "spring", "summer", "fall"))
 
-my.dates <- as.Date(trend$Date, format = "%Y-%m-%d") + 0:60
+
 trend$Season2<-getSeason(trend$Date)
 ```
